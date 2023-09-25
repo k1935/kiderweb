@@ -1,0 +1,7 @@
+{
+  "name": "kiderweb",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
