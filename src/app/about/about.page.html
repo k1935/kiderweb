@@ -7,13 +7,13 @@
       </ion-title>
     </ion-buttons>
     <div class="center-buttons">
-      <ion-button fill="clear" class="center-button" color="danger" >
+      <ion-button fill="clear" class="center-button" color="danger" (click)="navigateTohome()">
         Home
       </ion-button>
-      <ion-button fill="clear" class="center-button" color="danger" (click)="navigateToabout()">
+      <ion-button fill="clear" class="center-button" color="danger">
         About Us
       </ion-button>
-      <ion-button fill="clear" class="center-button" color="danger" (click)="navigateToclasses()">
+      <ion-button fill="clear" class="center-button" color="danger" (click)=" navigateToclasses()">
         Classes
       </ion-button>
       <ion-button fill="clear" class="center-button" color="danger">
@@ -33,96 +33,15 @@
 
 <ion-content>
   <div class="image">
-    <img src="assets/icon/carousel-1.jpg" alt="Wild Landscape" style="width: 100%;height: 100%;top:0px;" />
+    <img src="assets/icon/carousel-1.jpg" alt="Wild Landscape" style="width: 100%; max-height:500px;; top: 0;" />
     <div class="image-overlay">
-      <h2 class="image-heading" style="font-size: 30px; color: white; font-weight: 900; font-family: 'Lobster Two', cursive; font-weight: 700; font-size: calc(1.375rem + 1.5vw); display: inline-block;">The Best Kindergarten School For your Child</h2>
-      <p style="color:white; font-size: 18px; font-weight: 600; display: inline-block;">Vero elitr justo clita lorem.lpsum dolor</p>
-      <p style="color:white; font-size: 18px; font-weight: 600; display: inline-block;">Kasd rebum ipsum et diam justo clita et kasd rebum sea</p>
-      <ion-buttons slot="end">
-        <ion-button style="background-color:#FE5D37; color: white; padding: 10px; border-radius: 15px; margin-right: 20px;">Learn More</ion-button>
-        <ion-button class="join-button" style="background-color: #103741; color: white; border-radius: 15px; padding: 10px;">Our Classes</ion-button>
-      </ion-buttons>
+      <div class="text-center">
+        <h2 class="image-heading" style="font-size: 35px; color: white; font-weight: 900; font-family: 'Lobster Two', cursive;  font-size: calc(1.375rem + 1.5vw); display: inline-block;">About Us</h2>
+        <p style="color: red; font-size: 32px;">Home/ PagesAbout/ Us</p>
+      </div>
     </div>
   </div>
 
-  <div style="text-align: center;">
-    <h1 style="font-family: 'Lobster Two',cursive;color: #103741;font-size: calc(1.375rem + 1.5vw);font-weight: 700;">School Facilities</h1>
-    <p style="font-family: Heebo,sans-serif; color: gray;font-size: 1rem;font-weight: 400;line-height: 1.5;">Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd <br>vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
-  </div>
-
-  <ion-grid>
-    <ion-row>
-
-      <ion-col size="3">
-        <ion-card class="circle-card1">
-          <ion-card-content>
-            <ion-img src="assets/icon/icons8-bus-50 (1).png" class="red-bus-icon" style="width:50px;"></ion-img>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-      <ion-col size="3">
-        <ion-card class="circle-card2">
-          <ion-card-content>
-            <ion-img src="assets/icon/icons8-football-50 (1).png"  style="width:50px;"></ion-img>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-      <ion-col size="3">
-        <ion-card class="circle-card3">
-          <ion-card-content>
-            <ion-img src="assets/icon/icons8-home-50 (1).png" style="width:50px;"></ion-img>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-      <ion-col size="3">
-        <ion-card class="circle-card4">
-          <ion-card-content>
-            <ion-img src="assets/icon/icons8-training-50 (1).png" style="width:50px;"></ion-img>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-
-    <!-- Larger circle cards -->
-    <ion-row>
-      <ion-col size="3">
-        <ion-card class="large-circle-card1">
-          <ion-card-content >
-            <h2 style="color: #FE5D37;font-size: 20px; font-weight:600;  margin: auto;
-            margin-top:30px;font-family: 'Lobster Two', cursive;  display: inline-block;display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">School Bus</h2>
-            <p>Eirmod sed ipsum dolor sit rebum <br>magna erat lorem kasd vero ipsum sit</p>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-      <ion-col size="3">
-        <ion-card class="large-circle-card2">
-          <ion-card-content>
-            <h2 style="color: #103741;font-size: 20px; font-weight:600;  margin: auto;
-            margin-top:30px;font-family: 'Lobster Two', cursive;  display: inline-block;display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">Playground</h2>
-            <p>Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit</p>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-      <ion-col size="3">
-        <ion-card class="large-circle-card3">
-          <ion-card-content>
-            <h2 style="color: rgb(255, 153, 0);font-size: 20px; font-weight:600; margin: auto;
-            margin-top:30px; font-family: 'Lobster Two', cursive;  display: inline-block;display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">Healthy Canteen</h2>
-            <p>Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit</p>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-      <ion-col size="3">
-        <ion-card class="large-circle-card4">
-          <ion-card-content>
-            <h2 style="color: aqua; font-size: 20px; font-weight:600; font-family: 'Lobster Two', cursive;  display: inline-block;display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; margin: auto;
-            margin-top:30px;">Positive Learning</h2>
-            <p>Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit</p>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
 
   <ion-grid>
     <ion-row>
@@ -461,6 +380,7 @@
   </div>
 
 </ion-content>
+
 
 
 
